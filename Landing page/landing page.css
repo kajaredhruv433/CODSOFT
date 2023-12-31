@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+header {
+    position: fixed;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(18, 18, 18, 0.7);
+    backdrop-filter: blur(0px);
+    padding: 20px;
+    z-index: 1;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(215, 210, 210);
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 3px;
+}
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover:before {
+    background-color: rgb(29, 178, 219);
+}
+nav ul li a:hover {
+    color: rgb(29, 178, 219);
+}
+.register-login {
+    display: flex;
+    gap: 20px;
+}
+.register-login a {
+    text-decoration: none;
+    color: rgb(29, 178, 219);
+    padding: 8px 12px;
+    border: 1px solid rgb(29, 178, 219);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.register-login a:hover {
+    background-color: rgb(29, 178, 219);
+    color: #fff;
+}
+.register-now {
+    margin-top: 20px;
+    text-align: center;
+}
+.register-now a {
+    text-decoration: none;
+    color: rgb(29, 178, 219);
+    border-bottom: 1px solid rgb(29, 178, 219);
+    transition: border-bottom 0.3s ease;
+}
+.register-now a:hover {
+    border-bottom: 1px solid transparent;
+}
+main {
+    background-image: url('example.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ebe8e8;
+    padding-top: 120px;
+    overflow-y: auto;
+}
+main .content {
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+main .header-text {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 23vh;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-size: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+main h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
